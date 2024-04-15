@@ -4,6 +4,8 @@ import Button from './components/Button';
 import ImageViewer from "./components/ImageViewer";
 import * as ImagePicker from 'expo-image-picker';
 import { useState } from 'react';
+import CircleButton from './components/CircleButton';
+import IconButton from './components/IconButton';
 
 const [showAppOptions, setShowAppOptions] = useState(false);
 const [selectedImage, setSelectedImage] = useState(null);
