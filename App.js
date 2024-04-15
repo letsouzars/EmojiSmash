@@ -5,7 +5,7 @@ import ImageViewer from "./components/ImageViewer";
 import * as ImagePicker from 'expo-image-picker';
 import { useState } from 'react';
 
-
+const [showAppOptions, setShowAppOptions] = useState(false);
 const [selectedImage, setSelectedImage] = useState(null);
 const PlaceholderImage = require("./assets/images/background-image.png");
 const pickImageAsync = async () => {
@@ -28,7 +28,7 @@ export default function App() {
         <ImageViewer
           placeholderImageSource={PlaceholderImage}
           selectedImage={selectedImage}
-        />;
+        />
       </View>
       <View style={styles.footerContainer}>
         <Button theme="primary" label="Choose a photo" />
